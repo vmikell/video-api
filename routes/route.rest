@@ -1,0 +1,28 @@
+GET http://localhost:3000/videos
+
+###
+
+GET http://localhost:3000/videos/610b5193e059b31968f530ea
+
+###
+
+POST http://localhost:3000/videos
+Content-Type: application/json
+
+{
+  "videoTitle": "Test Video",
+  "url": "https://testvideo.com/play"
+}
+
+###
+
+DELETE http://localhost:3000/videos/610b5193e059b31968f530ea
+
+###
+
+PATCH http://localhost:3000/videos/610b51c76ac81d5bc0b6c9b2
+Content-Type: application/json
+
+{
+  "videoTitle": "New Test Video"
+}
